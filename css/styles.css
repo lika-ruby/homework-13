@@ -31,6 +31,11 @@ body {
   padding: 24px 0;
 }
 
+.container-header {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo,
 .footer-logo {
   color: var(--accent-color, #2196f3);
@@ -53,12 +58,24 @@ body {
   letter-spacing: 0.28px;
 }
 
+.header-nav-list {
+  display: flex;
+  gap: 50px;
+  margin-left: 93px;
+}
+
+.header-contacts-list {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+}
+
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: var(--accent-color, #2196f3);
 }
 
-.header-contacts-link {
+.header-contacts-list .header-contacts-link {
   color: var(--text-color, #757575);
   font-size: 14px;
   font-weight: 500;
@@ -78,6 +95,12 @@ body {
   padding: 200px 0;
 }
 
+.container-hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .hero-title {
   color: var(--second-accent-color, #fff);
   text-align: center;
@@ -86,6 +109,8 @@ body {
   line-height: 1.36;
   letter-spacing: 2.64px;
   text-transform: uppercase;
+  max-width: 696px;
+  margin-bottom: 40px;
 }
 
 .hero-button {
@@ -107,6 +132,15 @@ body {
   padding: 94px 0 47px;
 }
 
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-item {
+  max-width: 270px;
+}
+
 .advantages-subtitle {
   color: var(--title-color, #212121);
   font-size: 14px;
@@ -114,6 +148,7 @@ body {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .advantages-desc {
@@ -137,6 +172,12 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+
+.doing-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Команда */
@@ -146,12 +187,22 @@ body {
   padding: 94px 0;
 }
 
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-item {
   border-radius: 0px 0px 4px 4px;
   background: var(--background-color, #fff);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   max-width: 270px;
+  padding-bottom: 30px;
+}
+
+.team-photo {
+  margin-bottom: 30px;
 }
 
 .team-title {
@@ -161,6 +212,7 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
+  margin-bottom: 50px;
 }
 
 .team-subtitle {
@@ -169,6 +221,8 @@ body {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.48px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .team-desc {
@@ -177,6 +231,7 @@ body {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.48px;
+  text-align: center;
 }
 
 /* Підвал сайту */
@@ -196,6 +251,8 @@ body {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
+  margin-top: 20px;
+  display: block;
 }
 
 .footer-link {
@@ -204,6 +261,8 @@ body {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
+  margin-top: 9px;
+  display: block;
 }
 
 /* Portfolio */
